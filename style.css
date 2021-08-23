@@ -16,7 +16,12 @@ body{
     
 }
 .grid{
-    height: 88%;
+    min-height: 88%;
+    display: flex;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
 }
 .filter-container,.action-container{
     height: 75%;
@@ -61,6 +66,10 @@ body{
 }
 .filter:hover{
     background-color: #393939;
+}
+.delete-state{
+    background-color: #393939!important;
+
 }
 .add,.cross{
     font-size: 2rem;
@@ -132,12 +141,13 @@ body{
     height: 6rem;
     width: 13rem;
     border: 1px;
+    margin-bottom: 20px;
     background-color: rgb(243, 231, 231);
 }
 .ticket-color{
     height: 5%;
     width: 100%;
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
     border-top-right-radius: 5px;
     border-top-right-radius: 5px;
 }
